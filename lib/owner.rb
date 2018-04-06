@@ -37,11 +37,14 @@ class Owner
   end
 
   def buy_dog(name)
-      @pets[:dogs] << Dog.new(name)
+      self.pets[:dogs] << Dog.new(name)
   end
 
   def walk_dogs
-      self.
+      self.pets[:dogs].map do |dog|
+          dog.mood = "happy"
+      end
+  end
 
 
 
