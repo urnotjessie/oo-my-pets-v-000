@@ -59,6 +59,12 @@ class Owner
   end
 
   def sell_pets
+      self.pets.map do |type, pets|
+          pets.map do |pet|
+              pet.mood = "nervous"
+          end
+          pets.clear
+
 
 
 
