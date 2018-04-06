@@ -21,7 +21,8 @@ class Owner
       @@all.clear
   end
 
-  def species
+  def say_species
+      
 
 
 
